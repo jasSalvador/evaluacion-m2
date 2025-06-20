@@ -1,0 +1,66 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* estilos generales */
+header {
+    background-image: url(../img/cyber-.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 350px;
+}
+
+header h1 {
+    font-size: 5rem;
+    text-shadow: 5px 5px 5px #383838;
+}
+
+footer {
+    background-color: #04d3d6;
+}
+
+
+/* inicio */
+.intro img, .box{
+    box-shadow: 5px 5px 5px #383838;
+}
+
+.intro img:hover, .boxes .box:hover {
+    transform: scale(1.1);
+    opacity: 0.9;
+}
+
+.boxes .box {
+    width: 250px;
+}
+
+/* amenazas ciberataque */
+.card {
+    width: 17rem;
+    height: 350px;
+}
+
+.card img {
+    height: 200px;
+}
+
+.carousel-item img {
+    height: 400px;
+    object-fit: cover;
+}
+
+
+
+
+/* responsive */
+@media (max-width: 576px) {
+    header h1 {
+        font-size: 3.6rem;
+    }
+    .card {
+        width: 20rem;
+    }
+}

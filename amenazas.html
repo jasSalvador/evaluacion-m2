@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+    <script defer src="./assets/js/script.js"></script>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Amenazas ciberneticas | SecureZone</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary px-4">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">SecureZone</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Amenazas comunes ⚠</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="">Consejos de seguridad 🔒</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <header class="d-flex justify-content-center align-items-center px-5">
+            <h1 class="text-center text-dark fw-bold mx-auto">Conoce las amenazas más comunes</h1>
+        </header>
+        <section class="p-5">
+            <div class="container">
+                <p class="text-center pt-4 mx-auto">
+                    En el entorno digital actual, las amenazas cibernéticas están en constante evolución y pueden afectar 
+                    tanto a personas como a empresas. En esta sección, te presentamos los ataques más frecuentes como el 
+                    phishing, el ransomware, el malware y los ataques DDoS, explicando en qué consisten, cómo operan y 
+                    qué medidas puedes tomar para prevenirlos.
+                </p>
+            </div>
+
+            <div class="d-flex flex-wrap justify-content-evenly align-items-center my-5">
+                <!-- phishing -->
+                <div class="card mb-3">
+                    <img src="./assets/img/phishing.jpg" class="card-img-top" alt="Phishing">
+                    <div class="card-body">
+                        <h5 class="card-title">Phishing 🕵️‍♀️</h5>
+                        <p class="card-text">Engaño mediante correos o mensajes falsos que suplantan identidades para 
+                            obtener tus datos personales o bancarios.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- ransomware -->
+                <div class="card mb-3">
+                    <img src="./assets/img/ransomware.jpg" class="card-img-top" alt="Ransomware">
+                    <div class="card-body">
+                        <h5 class="card-title">Ransomware 🧨</h5>
+                        <p class="card-text">Tipo de malware que bloquea tus archivos o sistema operativo y exige un pago para recuperarlos.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- malware -->
+                <div class="card mb-3">
+                    <img src="./assets/img/malware.jpg" class="card-img-top" alt="Malware">
+                    <div class="card-body">
+                        <h5 class="card-title">Malware 🦠</h5>
+                        <p class="card-text">Software malisioso que se instala sin tu permiso para robar información, dañar el 
+                            sistema o espiar tu actividad.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- DDoS -->
+                <div class="card mb-3">
+                    <img src="./assets/img/DDos.jpg" class="card-img-top" alt="DDoS">
+                    <div class="card-body">
+                        <h5 class="card-title">DDos 🌍</h5>
+                        <p class="card-text">Saturan un servidor o sitio web con miles de peticiones para dejarlo fuera de servicio temporalmente.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- crrusel -->
+        <section class="pb-5">
+            <h2 class="text-center mb-5 mx-auto">Casos reales de CiberAtaque</h2>
+            <div id="carouselExampleCaptions" class="carousel slide container">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="./assets/img/-hacker.jpg" class="d-block w-100" alt="Hacker">
+                        <div class="carousel-caption d-none d-md-block bg-black opacity-75 px-5">
+                            <h5>Ataque a Facebook | 2019</h5>
+                            <p>Quedaron expuestos los datos de casi 50 millones de cuentas, debido a errores 
+                                de configuración que permitió a los atacantes acceder a información privada.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./assets/img/hacked.jpg" class="d-block w-100" alt="Sistema hackeado">
+                        <div class="carousel-caption d-none d-md-block bg-black opacity-75 px-5">
+                            <h5>Ataque a Twitter | 2020</h5>
+                            <p>Cuentas verificadas como las de Elon Musk, Obama y Apple fueron hackeadas para publicar una estafa de 
+                                criptomonedas. El ataque fue causado por ingeniería social a empleados de Twitter.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./assets/img/password.jpg" class="d-block w-100" alt="Robo contraseña">
+                        <div class="carousel-caption d-none d-md-block bg-black opacity-75 px-5">
+                            <h5>Ataque a Mercado Libre | 2022</h5>
+                            <p>Casi 300 mil datos de usuarios fueron filtrados tras una brecha en sus sistemas. Aunque no comprometieron 
+                                contraseñas, expusieron información personal importante.</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </section>
+    </main>
+    <footer class="py-5">
+        <p class="text-center mx-auto mb-0">&copy 2025 | Desarrollado por Jasmin Salvador</p>
+    </footer>
+</body>
+</html>
