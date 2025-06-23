@@ -1,6 +1,6 @@
 //modal test seguridad / asignar puntaje/ mostrar mensaje
-$(document).ready(function () {
-    $("#testSeguridad").on("submit", function (e) {
+$(document).ready(function() {
+    $("#testSeguridad").on("submit", function(e) {
         e.preventDefault();
 
         const resp1 = $('input[name="preg1"]:checked').val();
@@ -31,7 +31,7 @@ $(document).ready(function () {
     });
 
     // btn volver a intentar
-    $("#btnVolverIntentar").on("click", function () {
+    $("#btnVolverIntentar").on("click", function() {
         // reset test
         $("#testSeguridad")[0].reset();
 
@@ -43,11 +43,41 @@ $(document).ready(function () {
     });
 
     // cerrar modal
-    $("#cerrarModal").on("click", function () {
+    $("#cerrarModal").on("click", function() {
         // limpiar test
         $("#testSeguridad")[0].reset();
 
         // volver a ocultar btn volver a intentar
         $("#btnVolverIntentar").addClass("d-none");
     });
+});
+
+
+// mostrar form contacto
+$("#btnContacto").on("click", function() {
+    // console.log("btn click");
+    $("#formContacto").removeClass("d-none");
+});
+
+
+// form contacto
+$("#formContacto").on("submit", function(e) {
+    e.preventDefault();
+    const nombre = $("#nombre").val().trim();
+    const correo = $("#correo").val().trim();
+    const comentario = $("#comentario").val().trim();
+    const correoRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+    if (nombre === "" || correo === "" || comentario === "") {
+        alert("Debes ingresar todos los datos");
+        return;
+    };
+
+    if (!correoRegex.test(correo)) {
+        alert("Ingresa un correo válido");
+        return;
+    };
+
+    alert(`Mensaje enviado. ${nombre}, muchas gracias por contactarnos!`);
+    $("#formContacto").addClass("d-none");
 });

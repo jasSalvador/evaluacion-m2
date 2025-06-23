@@ -116,6 +116,33 @@
                 </div>
             </div>
         </section>
+
+        <!-- form mas info -->
+        <section>
+            <div class="d-flex flex-column justify-content-center align-items-center py-5 mx-auto">
+
+            <h3>¿Necesitas más información? Contáctanos</h3>
+            <button class="btn btn-info my-4" id="btnContacto">contácto 📩</button>
+
+                <!-- form oculto -->
+                <form id="formContacto" class="border rounded-4 p-5 bg-light w-50 d-none">
+                    <div class="mb-3">
+                        <label for="nombre" class="form-label">Nombre</label>
+                        <input type="text" class="form-control" id="nombre" name="nombre">
+                    </div>
+                    
+                    <div class="mb-3">
+                        <label for="correo" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="correo" name="correo" placeholder="nombre@ejemplo.com">
+                    </div>
+                    <div class="mb-3">
+                        <textarea class="form-control" id="comentario" name="comentario" rows="3" placeholder="Ingresa tu comentario"></textarea>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+            </div>
+        </section>
     </main>
     <footer class="py-5">
         <p class="text-center mx-auto mb-0">&copy 2025 | Desarrollado por Jasmin Salvador</p>
