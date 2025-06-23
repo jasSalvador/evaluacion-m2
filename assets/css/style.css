@@ -52,7 +52,10 @@ footer {
     object-fit: cover;
 }
 
-
+/* consejos */
+#formContacto {
+    width: 50%;
+}
 
 
 /* responsive */
@@ -62,5 +65,12 @@ footer {
     }
     .card {
         width: 20rem;
+        height: auto;
+    }
+}
+
+@media(max-width: 768px) {
+    #formContacto {
+        width: 80%;
     }
 }
